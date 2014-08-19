@@ -5,13 +5,13 @@ Rails.application.routes.draw do
     # You can have the root of your site routed with "root"
     root 'home#index'
 
-   # post '/validate' => 'home#validate'
-   # post '/submit' => 'home#submit'
+    post '/validate' => 'home#validate'
+    post '/submit' => 'home#submit'
 
-   # get '/insert' => 'home#insert'
-   # get '/success' => 'home#success'
-   # get '/failure' => 'home#failure'
-   # get '/registered' => 'home#registered'
+    get '/insert' => 'home#insert'
+    get '/success' => 'home#success'
+    get '/failure' => 'home#failure'
+    get '/registered' => 'home#registered'
 
     # Example of regular route:
     #   get 'products/:id' => 'catalog#view'

@@ -3,5 +3,7 @@
     <%= form_tag(controller: "home", action: "validate", method: "post") do %>
         <%= text_field_tag 'IEEE', 'Enter your IEEE Number', class: 'form-control input-sm', id: 'inputSmall', style: "width:60%;margin-left:20%;" %> <br/> <br/>
         <%= submit_tag 'submit', class: "btn btn-primary btn-lg" %>
+
+        <p style="font-size:14px;font-style:italics;padding-top:3%;"><i>"<%= @q %>"</i></p>
     <% end %>
 </div>
