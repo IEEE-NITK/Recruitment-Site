@@ -1,0 +1,6 @@
+<div>
+    <h2> IEEE Recruitment form </h2>
+    <%= form_tag(controller: "home", action: "validate", method: "post" do %>
+        <%= text_field_tag 'IEEE', 'Enter your IEEE Number' %>
+    <% end %>
+</div>

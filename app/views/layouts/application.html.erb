@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Recruitments</title>
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+        <%= csrf_meta_tags %>
+    </head>
+    <body>
+
+        <div class="navbar">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">IEEE-NITK</a>
+            </div>
+        </div>
+
+
+
+
+        <% if flash[:notice] %>
+            <div class="alert-warning" style="text-align:center; font-size:20px;"> <%= flash[:notice] %> </div>
+        <% end %>
+        <%= yield %>
+
+    </body>
+</html>

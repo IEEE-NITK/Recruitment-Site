@@ -1,0 +1,22 @@
+<div class="bsa well" style="text-align:center;">
+    <table>
+        <%= form_for @applicant, url: {action: "submit"} do |f| %>
+            <tr>
+                <td><%= f.label :name %> </td>
+                <td><%= f.text_field :name %> </td>
+            </tr>
+            <tr>
+                <td><%= f.text_field :ieee_number, disabled: true %></td></tr>
+            <tr><td><%= f.text_field :email %></td></tr>
+            <tr><td><%# f.text_field :DOB %></td></tr>
+            <tr><td><%= f.text_field :contact %></td></tr>
+            <tr><td><%= f.select :sig, "<option>Python</option><option>Piston</option><option>Diode</option>".html_safe %></td></tr>
+            <tr><td><%= f.select :date, options_for_select(@dates,12) %>&nbsp;Aug'14</td></tr>
+
+            <tr><td><%# f.text_area :interests, "Describe your interests and accomplishments (1000 chars limit)" %></td></tr>
+
+            <tr><td><%= f.submit :submit %></td></tr>
+
+        <% end %>
+    </div>
+
